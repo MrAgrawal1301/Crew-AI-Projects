@@ -11,7 +11,7 @@ os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
 search_tool = SerperDevTool()
 
 llm=LLM(model="ollama/qwen3:0.6b", base_url="http://localhost:11434")
-
+# make the agent properly and do it welll 
 planner = Agent(
     role="Content Planner",
     goal="Plan engaging and factually accurate content on {topic}",
